@@ -1,0 +1,15 @@
+{
+  "name": "airtunes-relay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodetunes": "^0.3.0",
+    "node_airtunes": "https://github.com/puckbag/node_airtunes.git#puckbag/node-v4"
+  }
+}
