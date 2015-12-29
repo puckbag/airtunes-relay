@@ -4,6 +4,7 @@ var exec  = require('child_process').exec;
 var async = require('async');
 
 function decodeDecimalEncodedCharacters (value) {
+	value = value || '';
 	function replacer (match, p1, offset, string) {
 		return String.fromCharCode(p1);
 	};
@@ -28,6 +29,10 @@ function scanner (scanner_callback) {
 			var fields = line.split(';');
 			var id = decodeDecimalEncodedCharacters(fields[3]);
 			var id_parts = id.split('@');
+			if (!id) {
+				return;
+			}
+
 			devices[id] = {
 				domain: fields[5],
 				mac: id_parts[0],
