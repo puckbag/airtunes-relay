@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "async": "^1.5.0",
     "dotenv": "^1.2.0",
     "lodash": "^3.10.1",
     "node_airtunes": "https://github.com/puckbag/node_airtunes.git#puckbag/node-v4",
